@@ -1,4 +1,4 @@
-package a04;
+package a05;
 
 public abstract class Instrumento {
     Nota[] melodia;
@@ -9,10 +9,10 @@ public abstract class Instrumento {
         posicion = 0;
     }
     
-    public void add(Nota n) {
-        if (posicion < melodia.length) {
+    public void add(Nota n){
+        if (posicion < melodia.length){
             melodia[posicion] = n;
-            posicion++;
+            posicion ++;
         } else{
             System.out.println("has alcanzado el maximo");
         }
@@ -20,3 +20,10 @@ public abstract class Instrumento {
     
     abstract void interpretar();
 }
+
+/*@Override
+    void interpretar(){
+        for (int cont= 0; i < posicion; cont++) {
+            System.out.print(melodias[cont] + " ");
+        }
+    }*/
