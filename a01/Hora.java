@@ -1,8 +1,8 @@
 package a01;
 
 public class Hora {
-    private int h;
-    private int m;
+    protected int h;
+    protected int m;
     
     Hora(int h, int m){
         this. h = h;

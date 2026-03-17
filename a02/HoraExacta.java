@@ -13,14 +13,7 @@ public class HoraExacta extends Hora{
         s++;
         if (s > 59){
             s = 0;
-            super.m++;
-            if (super.m > 59){
-                super.m = 0;
-                super.h++;
-                if(super.h > 23){
-                    super.h = 0;
-                }
-            }
+            super.inc();
         }
     }
     
